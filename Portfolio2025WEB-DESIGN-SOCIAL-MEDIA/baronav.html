@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+        <div id="logo"><img src="resources/Logo.png" alt="logo of Jeffrey Cheng's intitials" width="100" height="100"></div>
+        <nav class="navigation">
+            
+            <ul id="nav-links">
+                <button onclick="location.href='index.html'">About</button>
+                <button onclick="location.href='projects.html'">Projects</button>
+                <button onclick="location.href='resources/ResumeJrWebDeveloperFINAL.pdf'">Resume</button>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div id = "exterior-title">
+            <h1>BaroNav</h1>
+        </div>
+        <section class="background-ski">
+            <section class="project-intro-container">
+            
+                <div class="project-image-wrapper">
+                    
+                    <img src="resources/baronav.png" width="100%" height="100%" alt="baronav mobile project">
+                    <p style="font-size:12px;">A Mobile Computing Group Final Project by Jeffrey Cheng & Max Nielsen.</p>
+                    
+                </div>
+            
+            </section>
+            <section class="project-intro-container">
+                <div class="project-card">
+                    <div class="project-description">
+                        <h2>
+                            Project Description
+                        </h2>
+                        <p>
+                            BaroNav is a barometric pressure tracking app developed for IAT 359: Mobile Computing at Simon Fraser University (SFU). The app leverages smartphone barometer sensors and GPS data to provide personalized, location-based weather insights. Users can track real-time atmospheric pressure, analyze historical trends, and integrate external weather services for comprehensive forecasting.
+Our focus was to make barometric pressure a key factor in weather-related decision-making while ensuring accurate, data-driven, and visually intuitive insights.
+                        </p>
+                        
+                    </div>
+
+
+                </div>
+                
+            </section>
+            <section class="project-container">
+                <div class="project-card">
+                    <div class="project-description">
+                        <h2>
+                            Main Functionalities & Development
+                        </h2>
+                        <p>I was responsible for designing and implementing the core functionalities of the app, including:
+                            Mobile Application Development (Java, XML, Android Studio)
+                            Developed a fully functional interactive map, allowing users to save, edit, and navigate locations seamlessly.
+                            Designed a smooth and responsive UI layout to enhance location management and usability.
+                            Implemented data visualization tools to track atmospheric pressure trends.
+                            User Interface & Experience Design (Figma, Wireframing, UX/UI Design)
+                            Refined XML layouts for the home screen and map navigation, improving intuitiveness.
+                            Designed pin-based selection and manual location entry for accessibility.
+                            Developed a visually clear and engaging UI to make barometric pressure insights easy to understand.</p>  
+                    </div>
+                    <div class="project-image-wrapper">
+			
+			<img src="resources/sketchui.png" width="40%" height="auto" alt="originalstyle of website ventureski">    
+			<p style="font-size:12px;">These are the essential elements for the home page and weather data which are designed in figma and developed in XML, Java and Android Studio. </p>
+		    </div>  
+
+
+                </div>
+                
+            </section>
+
+            
+
+            <div class="problem-container">
+                <div class="problem" id="problem1">
+                    <div class="project-card">
+                        <div class="project-description">
+                            
+                            <h2>Weather Data Integration Challenges</h2>
+                            <p>One of the biggest challenges was implementing the weather API, as its complex data structure required extensive processing. Developing a custom WeatherService was necessary to fetch, store, and dynamically update pressure and weather conditions efficiently.</p>
+                            <div class="project-image-wrapper">
+                                <img src="resources/gatherdataFINAL.png" width="60%" height="auto" alt="old ventureskiwebsite layout">  
+                                <p style="font-size:12px;">This is the data that is being obtained to display the weather conditions. </p>
+                            </div>
+                        </div> 
+                        
+
+                        
+                        <!--
+                        <div class="project-description">                            
+                            <h2>Solution:</h2>
+                            <p></p>The realization of this mismatch prompted a strategic pivot in the design approach. I undertook additional research to identify a web design style that would more accurately reflect the skiing theme. This critical adjustment, although realized later in the development process, was essential in realigning the website’s aesthetic with its thematic goals, thereby ensuring a more authentic and engaging user experience.</p> 
+                        </div>
+
+                        <div class="project-intro-image">
+                            <img src="resources/Layouts.png" width="500" height="400" alt="updated ventureskiwebsite layout">   
+                            <img src="resources/newstyle.png" width="500" height="400" alt="inspiration for the new style for ventureski"> 
+                        </div>
+                    -->
+                    </div>
+                </div>
+
+                <div class="problem" id="solution1ski">
+                    <div class="solution-container">
+                        <div class="project-card">
+                            <div class="project-description">                            
+                                <h2>Easily parse the response and link data to UI widgets</h2>
+                                <p>To optimize performance, I structured API calls using OkHttpClient in Java for efficient data parsing. Then, I linked responses to UI widgets in real-time, ensuring accurate and smooth weather updates.</p> 
+                                <div class="project-image-wrapper">
+				    <img src="resources/uiwithdata.png" width="100%" height="auto" alt="UIwidgets with data">   
+				    <p style="font-size:12px;">The data is being displayed on the home page after the data is obtained.</p>
+				</div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+                <!--
+                <div class="problem" id="problem2">
+                    <div class="project-card">
+                        <div class="project-description">
+                            <h2>Problem 2: Payment Integration Challenge</h2>
+                            <p> A significant challenge identified was the integration of a payment system within the account page, crucial for streamlining the booking process and enhancing user convenience.</p>
+                            
+                            <h2>Solution:</h2>
+                            <p>To address this, the account page was specifically developed to incorporate payment functionalities. This development was aimed at providing a straightforward and secure payment process, allowing users to easily manage bookings and transactions. This solution not only improved the website's functionality but also significantly enhanced the user experience by providing a hassle-free payment process.                        </p> 
+                        </div>
+                        <div class="project-intro-image">
+                            <img src="resources/accountpagevsa.png" width="500" height="400" alt="the account page of venture ski wesbite">   
+                            <img src="resources/eventspagevsa.png" width="500" height="400" alt="the events page of venture ski wesbite"> 
+                        </div>
+                    </div>
+                </div>
+            -->
+            <div class="problem-container">
+                <div class="problem" id="problem2">
+                    <div class="project-card">
+                        <div class="project-description">
+                            <h2>Map Navigation Complexity</h2>
+                            <p> Building an intuitive and user-friendly map for users to add, edit, and manage locations posed another challenge. The XML layout required refinement to maintain responsiveness and smooth interactions.</p>
+                          
+                            <div class="project-image-wrapper">
+                                <img src="resources/add&edit.png" width="90%" height="auto" alt="the add and edit sections of the app">   
+                                <p style="font-size:12px;">The goal was to make a map easy for users to add, edit and manage locations. My partner Max has polished the layout. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem" id="solution2ski">
+                    <div class="solution-container">
+                        <div class="project-card">
+                            <div class="project-description">
+                                <h2>Improved UI/UX for Navigation</h2>
+                                <p>I coded the XML to refine Add/Edit Location layouts, ensuring seamless interaction with pin-based selection and manual entry. My partner further refined the layout for enhanced usability.</p> 
+				<div class="project-image-wrapper">
+				     <img src="resources/add&editsolve.png" width="80%" height="auto" alt="the account page of venture ski website">   
+				     <p style="font-size:12px;">The XML code was modified to make the desired appearance with add and edit location option. </p>
+				</div>
+					<!--<img src="resources/eventspagevsa.png" width="500" height="400" alt="the events page of venture ski wesbite"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <section class="reflection-container">
+                <div class="project-grid">
+                <div class="resolution" id="resolve">
+                    <div class="project-card">
+                        <div class="project-description">
+                        <h2>Reflection on Solutions:</h2>
+                        <p>BaroNav is a weather tracking app from my IAT 359: Mobile Computing project at SFU, utilizing barometric pressure and GPS data to provide real-time and location-specific weather insights.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <button onclick="location.href='citations.html'">Citations</button>
+            <button onclick="location.href='style_guide.html'">Style Guide</button>
+            <button onclick="location.href='contact.html'">Contact</button>
+        </div>
+        <p>© 2025 by Web Designer & Developer Jeffrey Cheng</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
