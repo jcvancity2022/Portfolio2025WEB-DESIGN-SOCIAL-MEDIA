@@ -1,0 +1,1491 @@
+/* Colour Scheme */
+:root {
+
+
+
+    --primary-color: rgb(19, 19, 19); /* A modern and vibrant primary color */
+    --secondary-color: rgb(255, 255, 255); /* Secondary color for contrast */
+    --accent-color: rgb(181, 222, 255); /* An accent color that stands out */
+    --text-color: rgb(51, 51, 51); /* Dark color for readable text */
+    --background-light: rgb(247, 247, 247); /* Light background for certain sections */
+    --background-light-grid: rgb(80, 115, 169); /* Light background for certain sections */
+    --font-family: 'Radio Canada', 'Arial', sans-serif; /* Font stack */
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+	position: relative;
+	top: 20px;
+	bottom: 20px;
+}
+
+body {
+    
+    background-image: url('../resources/designweb_header.jpg');
+    background-color:rgba(1, 62, 37, 0.367);
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0, 44, 114, 0.826), /* Left side fully dark */
+        rgba(0, 44, 114, 0.826) 90%
+      ),
+      url('../resources/designweb_header.jpg') no-repeat center center;
+    z-index: -1;
+}
+
+/* Typography */
+body, button, input, textarea {
+    font-family: 'Radio Canada', 'Arial', sans-serif; /* Clean, sans-serif font */
+    color: var(rgb(0, 81, 255));
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Radio Canada', sans-serif; /* Serif font for headings to add character */
+    color: var(--primary-color);
+}
+
+/* Layout & Design */
+header {
+    background-color: rgb(34, 67, 120); /* Black banner */
+    height: var(--header-height); /* Use the height variable */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Space out logo and navigation */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Horizontal padding */
+    height: 5rem;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#nav-links {
+    list-style-type: none;
+}
+
+#nav-links li {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+#nav-links li a {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#nav-links li a:hover, #nav-links li a:focus {
+    background-color: rgb(92, 160, 211);
+    color: #FFFFFF;
+}
+
+#theme-switcher {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#theme-switcher:hover {
+    background-color: darken(var(--accent-color), 10%);
+}
+
+#exterior-title h1 {
+    color:#ffffff;
+}
+
+footer {
+	padding: 1em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1em;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(34, 67, 120);
+    color: var(--secondary-color);
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+}
+footer > #contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1em 3em;
+}
+footer > #contact > div {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+footer > #contact > div > img {
+	width: 2em;
+}
+footer > #contact > div > h4 {
+	margin: 0;
+}
+footer > #meta {
+	flex-shrink: 0;
+	display: flex;
+	gap: 1em;
+}
+
+button {
+    font-size: 1.4rem;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(92, 160, 211);
+    color:#FFFFFF;
+}
+
+img a:hover a:focus{
+    opacity: 0.8;
+}
+
+p {
+    max-width:100%;
+}
+
+.about-text p {
+    max-width:80%;
+    font-size: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    /*background-color: var(--background-light);*/
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+header{
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image in the header */
+    color: #fff; /* Sets the text color to white for better visibility */
+    padding: 0 0; /* Add padding to ensure the content inside the header has some spacing */
+    z-index: 3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        font-size: .9rem;
+        flex-direction: row;
+    }
+
+    #nav-links li {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Dark mode styles */
+.dark-mode {
+    --primary-color: #FFFFFF; /* Invert primary color */
+    --secondary-color: rgb(91, 98, 190); /* Invert secondary color */
+    --text-color: #F7F7F7; /* Light text for dark background */
+    --background-light: rgb(51, 51, 51); /* Dark background for sections */
+}
+
+.dark-mode header {
+    background-color: var(--background-light);
+    color: var(--text-color);
+}
+
+.dark-mode #nav-links li a {
+    color: var(--text-color);
+}
+
+.dark-mode #theme-switcher {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.dark-mode footer {
+    background-color: var(--background-light);
+    color: var(--text-color);
+}
+
+/*responsive design*/
+@media (max-width: 1068px) {
+    /* Adjust the layout for smaller screens */
+    .project {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .project-image {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .project-info {
+      width: 100%; /* Allows the text to fill the container on smaller screens */
+    }
+  
+    .process {
+      width: auto; /* Allows the button to fit the content on smaller screens */
+      padding: 10px;
+    }
+  
+    .product-listing-container {
+        display: block;
+    }
+  
+    .checkout-container {
+        display: block;
+    }
+  
+    /* ... [additional responsive styles as needed] ... */
+}
+  
+footer > #footer-nav {
+	flex-shrink: 0;
+	display: flex;
+	gap: 1em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.column {
+    flex: 25%;
+    max-width: 100%;
+    padding: 0 0.2rem;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+#layouts{
+    width:80%;
+    justify-content: center;
+}
+
+.greyer {
+    perspective: 100px;
+	background-color: rgb(255, 255, 255);
+	padding: 0.01%;
+}
+
+/* colours of palettes*/
+.center {
+	margin: 8%;
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.center > div {
+	max-width: 20em;
+	overflow-wrap: break-word;
+}
+
+.no_max_width {
+	max-width: none !important;
+}
+
+.center > img {
+	max-width: 40%;
+}
+
+.center_div {
+	gap: 3em;
+}
+
+code {
+	display: block;
+	background-color: rgb(242, 242, 242);
+	padding: 1em;
+	border-radius: 1em;
+}
+
+#swatches {
+	display: flex;
+
+	border-radius: 10px;
+	overflow: hidden;
+}
+#swatches > div {
+	padding: 0.5em;
+}
+#swatch1 {
+	background-color: rgb(255, 255, 255);
+}
+#swatch2 {
+	background-color: rgb(242, 242, 242);
+}
+#swatch3 {
+	background-color: rgb(230, 230, 230);
+}
+#swatch4 {
+	background-color: rgb(212, 212, 212);
+}
+#swatch5 {
+	background-color: rgb(92, 160, 211);
+}
+#swatch6 {
+	background-color: rgb(0, 81, 255);
+}
+#swatch7 {
+	background-color: rgb(91, 98, 190);
+}
+#swatch8 {
+	background-color: rgb(0, 17, 255);
+}
+#swatch9 {
+	background-color: rgb(51, 51, 51);
+}
+#swatch10 {
+	background-color: rgb(0, 23, 67);
+}
+
+img {
+	border-radius: 10px;
+}
+img, section {
+	display: block;
+}
+
+.header-content {
+    position: relative;
+    font-size:2rem;
+    width:50%;
+    margin-top:10%;
+    left: 35%;
+
+    color: #ffffff; /* Assuming white text is visible on your image */
+    text-align: left;
+    z-index: 2; /* Ensures the text is above the background image */
+}
+.header-content h2 {
+    line-height: 2.5;
+    color: #ffffff; /* Assuming white text is visible on your image */
+}
+
+/* Adjustments to header background image */
+.header-background {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust based on your background image's aspect ratio */
+    z-index: -1; /* Ensures the image stays in the background */
+  }
+  
+  .header-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    opacity: 0.5; /* Adjust background opacity */
+    z-index: -2; /* Layer below the content */
+  }
+  
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../resources/designweb_header.jpg') no-repeat center center;
+    background-size: cover;
+    transition: background 0.5s ease; /* Transition for the gradient effect */
+    z-index: 1;
+  }
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+      background: linear-gradient(
+        to right,
+        rgba(0, 44, 114, 0.826), /* Left side fully dark */
+        rgba(0, 44, 114, 0.826) 90%
+
+      ),
+      url('../resources/designweb_header.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 1;
+    filter:blur(0.1rem);
+    z-index: 1;
+}
+        /*
+        rgba(2, 128, 0, 0.817) 90%*/
+.background-ski, .background-arthurErickson{
+
+/* This will vertically and horizontally center the problem containers */
+    padding: 2rem;
+    position: relative;
+
+    background: linear-gradient(
+        to right,
+        rgba(0, 8, 46, 0.826) 60%, /* Left side fully dark */
+        rgba(0, 10, 118, 0.804)
+      ), url('../resources/designweb_header.jpg') no-repeat center center;
+    background-size: cover;
+    transition: background 0.5s ease; /* Transition for the gradient effect */
+
+  }
+
+
+.ski-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-intro-container {
+    position: relative;
+    top: 50%; /* Adjust this to move up or down */
+    left: 0%;
+
+    color: rgb(0, 0, 0); /* Set text color */
+    max-width: 80%;  /* Set width */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align items horizontally */
+    gap: 1rem; /* Add space between elements */
+    border-radius: 15px; /* Optional: if you want rounded corners */
+    z-index: 2; /* Ensures the text is above the image */
+}
+
+
+
+
+  /* Expand the hovered side */
+  #designer:hover {
+    width: 65%;
+    z-index: 2;
+  }
+  #designer:hover ~ #coder {
+    width: 35%;
+    }
+  #coder:hover {
+    width: 65%;
+    z-index: 2;
+  }
+  #coder:hover ~ #designer {
+    width: 35%;
+}
+/* Reset to 50% when neither is hovered */
+#interactive-container:not(:hover) #designer,
+#interactive-container:not(:hover) #coder {
+    width: 50%;
+}
+.background > img {
+	border-radius: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.background > h1 {
+	color: white;
+
+	padding: 1em;
+	margin: 0;
+
+	position: absolute;
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+
+	margin-top: -35px;
+
+	position: relative;
+	top: 20px;
+	bottom: 20px;
+}
+
+
+/* animations */
+/* Initial state of the elements */
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+  }
+  
+  /* State of the elements when they are in the viewport */
+  .scroll-animation.visible {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+.image-container {
+    position: relative;
+    height: 100vh; /* Adjust height as needed */
+}
+
+.scroll-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+}
+
+#image1 {
+    opacity: 1; /* Image 1 is visible initially */
+}
+
+
+/*intro image*/
+#interactive-container {
+    position: relative;
+    width: 100%; /* Set to the width of your container */
+    height: 500px; /* Set to the height of your container */
+    overflow: hidden;
+}
+
+.interactive-half {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transition: width 0.5s ease;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#designer,
+#coder {
+  background-size: cover;
+  background-position: center;
+}
+
+#designer {
+    left: 0;
+    z-index: 1;
+    background: url('resources/designweb.png') no-repeat center center / cover; 
+}
+
+#coder {
+    right: 0;
+    z-index: 1;
+    background: url('resources/coding.png') no-repeat center center / cover;
+}
+
+    /* Hover effect for designer */
+    #designer:hover, #interactive-container:hover #designer {
+        width: 75%; /* Designer expands to 75% width */
+        z-index: 2;
+    }
+
+    /* Hover effect for coder */
+    #coder:hover, #interactive-container:hover #coder {
+        width: 75%; /* Coder expands to 75% width */
+        z-index: 2;
+    }
+
+    /* Ensuring the opposite side shrinks when one side is hovered */
+    #interactive-container:hover #designer:not(:hover) {
+        width: 25%; /* Non-hovered side shrinks */
+    }
+
+    #interactive-container:hover #coder:not(:hover) {
+        width: 25%; /* Non-hovered side shrinks */
+    }
+
+
+
+    .interactive-half {
+        position: absolute;
+        width: 50%; /* Initial width for both halves */
+        height: 100%; /* Fixed height */
+        transition: width 0.5s ease; /* Smooth transition for width only */
+        overflow: hidden; /* Hide the overflowed part */
+        background-size: cover;
+        background-position: center;
+        transition: width 0.3s ease;
+    }
+
+    .interactive-half img {
+        height: 100%; /* Full height */
+        width: auto; /* Maintain aspect ratio */
+        display: block; /* Prevent inline gaps */
+        transition: opacity 0.5s ease;
+    }
+
+    /* Adjust the non-hovered image to shrink back and cover the space */
+    #interactive-container:hover #designer:not(:hover) {
+        width: 25%; /* Shrink width */
+        right: 0; /* Reset position */
+    }
+    
+    #interactive-container:hover #coder:not(:hover) {
+        width: 25%; /* Shrink width */
+        left: 0; /* Reset position */
+    }
+
+
+    /* Hide images initially */
+    .interactive-half img {
+    display: block;
+    width: 100%; /* Full width */
+    height: 100%; /* Maintain aspect ratio */
+    transition: opacity 0.5s ease, width 0.5s ease;
+    }
+
+    
+    #designer:hover img,
+    #coder:hover img {
+    display: block;
+    opacity: 1;
+    }
+
+
+/* Profile */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centres the items horizontally */
+    gap: 20px; /* Adjust the spacing between elements */
+}
+
+.about{
+    width:80%
+}
+/* About Page Layout */
+.about-page {
+    flex-direction: column;
+}
+
+#about h2{
+    color:white;
+}
+
+.about-text {
+    color:white;
+    position: relative;
+    flex: 1; /* Adjust the value as needed */
+    left: 15%;
+    margin-top: 15%;
+    padding: 5rem; /* Adds padding around the text */
+    text-align: left; /* Aligns the text to the left */
+}
+
+nav .navigation {
+    margin-top: 0;
+}
+
+.profile-picture {
+    order: 1;
+}
+
+.profile-picture img {
+    border-radius: 60%; 
+    position: relative;
+    left:-20%;
+    max-width: 70%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.thought-image {
+    border-radius: 70%; 
+    position: absolute;
+    width: 250px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height to be the same as the width */
+    object-fit: cover; /* This will make sure the images cover the area without stretching */
+    animation: spin-around 4s 1 linear;
+    z-index: 2;
+}
+
+    /* Keyframes for text sliding from left to right */
+    @keyframes slideInFromLeft {
+        0% {
+        transform: translateX(-100%);
+        opacity: 0;
+        }
+        100% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+    }
+    /* Keyframes for text sliding from right to left */
+    @keyframes slideInFromRight {
+        0% {
+        transform: translateX(100%);
+        opacity: 0;
+        }
+        100% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+    }
+    .name {
+
+    }
+    /* Class to apply the left to right animation */
+    .UX/UI-designer {
+        font-size: 2rem;
+        position: relative;
+        animation: 1.8s ease-out 0s 1 slideInFromLeft;
+        display: inline-block; /* or block, depending on your layout */
+    }
+    
+    /* Class to apply the right to left animation */
+    .developer {
+        font-size: 2rem;
+        position: relative;
+        animation: 3s ease-out 0s 1 slideInFromRight;
+        display: inline-block; /* or block, depending on your layout */
+    }
+
+    /*thinking animation*/
+    .thinking-brain-container {
+        position: absolute;
+        left:-40%;
+        top: 8%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+        
+    }
+    .thought-bubble img {
+        width: 13%; /* Adjust the percentage as needed */
+
+        position: absolute;
+        top: 0;
+        transition: width 0.5s ease, top 0.5s ease;
+    }
+    .thought-image1 {
+        position: absolute;
+        top: 50px; /* Adjust to ensure the images do not overlap with the header */
+        left: 100%;
+        width: 250px; /* Set a fixed width */
+        height: 150px; /* Maintain aspect ratio */
+        animation: spin-around 4s 1 linear;
+        border-radius: 60%; /* Make the image round */
+        z-index: 2;
+    }
+    .thought-image2 {
+        position: absolute;
+        left: 10%;
+        top: 50px; /* Adjust to ensure the images do not overlap with the header */
+        width: 250px; /* Set a fixed width */
+        height: 150px; /* Maintain aspect ratio */
+        animation: spin-around 4s 1 linear;
+        border-radius: 60%; /* Make the image round */
+        z-index: 2;
+    }
+    #thought1 {
+        right: 0%; /* Adjust this value to position the first bubble */
+    }
+    #thought2 {
+        left: 20%; /* Adjust this value to position the second bubble */
+    }
+    @media (max-width: 100%){
+        /*thinking animation*/
+        .thinking-brain-container {
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 10%;
+            
+        }
+        .header-content {
+            margin-top: 0%;
+
+            position: absolute; /* or you could use 'relative' */
+            padding: 1rem; /* Adjust as needed */
+            text-align: left; /* Centers the text */
+        }
+        .problem-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+            flex-wrap: nowrap; /* Prevents the items from wrapping */
+        }
+
+    }
+    /* Ensure the thought images do not overlap the text */
+    @media (max-width: 75%) {
+        
+        /*thinking animation*/
+        
+        .thinking-brain-container {
+            position: absolute;
+            left: 30%;
+            top: -20%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 10%;
+            
+        }
+        
+        .header-content {
+            top: -180%;
+            position: absolute; /* or you could use 'relative' */
+            text-align: left; /* Centers the text */
+        }
+        .about-text{
+            left: 0%;
+            margin-top:6%;
+            text-align: left; /* Center the text on smaller screens */
+            order:2;
+        }
+        nav {
+            flex-direction: column;
+        }
+
+        #nav-links li {
+            margin-bottom: 1rem;
+        }
+
+        .project-intro-container {
+            position: relative;
+            top: 50%; /* Adjust this to move up or down */
+            left: 50%;
+            font-size:0.3rem;
+            transform: translate(-50%, -10%); /* Centers the content */
+            color: rgb(0, 0, 0); /* Set text color */
+            width: 80%; /* Set width */
+            padding: 1rem;
+        
+            border-radius: 15px; /* Optional: if you want rounded corners */
+            z-index: 2; /* Ensures the text is above the image */
+        }
+        .thought-image1 {
+            left: 75%;
+            border-radius: 50%;
+            width: 60%; /* Adjust for smaller screens */
+            top: 25%; /* Adjust position for smaller screens */
+        }
+        .thought-image2 {
+            border-radius: 50%;
+            width: 60%; /* Adjust for smaller screens */
+            top: 25%; /* Adjust position for smaller screens */
+        }
+        .about-text, .profile-picture {
+            flex-basis: 100%;
+            max-width: 100%;
+            padding: 1rem;
+            text-align: left; /* Center the text on smaller screens */
+            order:2;
+        }
+        .thought-bubble img {
+            width: 30%; /* Make the bubbles larger on smaller screens */
+            top: 190%;
+        }
+
+        .profile-picture img {
+            max-width: 50%; /* Adjust the percentage as needed */
+            height: auto;
+            display: block; /* Centers the image */
+            margin: 0 auto; /* Auto margins for horizontal centering */
+            top: 20%;
+        }
+
+        .profile-picture {
+            order: 1; /* Profile picture above the text */
+        }
+        .about-page {
+            flex-direction: column; /* Stack the profile picture and text */
+        }
+    
+        nav .navigation {
+            margin-top: 0;
+        }
+    
+    }
+    @media (max-width: 1500px) {
+        .about-text{
+            margin-left: -30%;
+            font-size: 1rem;
+            width: 20rem;
+        }
+        .about-text p{
+            font-size: 0.7rem;
+        }
+        .grid-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            flex-wrap: nowrap; /* Prevents the items from wrapping */
+        }
+    }
+    @media (max-width: 768px) {
+        .header-content .name{
+            font-size: 1.5rem;
+        }
+        .header-content .UI/UX-designer {
+            font-size: 1rem;
+        }
+        .header-content .developer{
+            font-size: 1rem;
+        }
+        .about-text{
+            margin-left: -60%;
+            font-size: 1rem;
+            width: 20rem;
+        }
+        .about-text p{
+            font-size: 0.5rem;
+        }
+        .grid-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            flex-wrap: nowrap; /* Prevents the items from wrapping */
+        }
+    }
+    /* Responsive profile picture */
+    .profile-picture img {
+        left:2.5%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensures the image covers the area without being stretched */
+    }
+
+    #thought1 {
+        right: 0%; 
+        top:120%;
+    }
+
+    #thought2 {
+        left: 60%; 
+        top:120%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+    }
+
+    .problem {
+        flex: 0 0 50%; 
+        box-sizing: border-box; 
+        margin: 1rem; 
+        max-width: calc(50% - 2rem);  
+    }
+
+    .contact {
+        flex: 0 0 50%; /* Shrink to fit content up to 50% width */
+        box-sizing: border-box; /* Include padding and border in the element's total width */
+        margin: 1rem; /* Optional: Adjust the value to give some space around the problem cards */
+        max-width: calc(50% - 2rem); /* Subtract the total margin from the 50% width if you have set any */
+    }
+  
+
+    @media (max-width: 75%) {
+        /*thinking animation*/
+        .thinking-brain-container {
+            position: absolute;
+            left: 0%;
+            top: 30%;
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 10%;
+            
+        }
+        .problem-container {
+            flex-direction: column; /* Stack children vertically */
+        }
+        .contact-container {
+            flex-direction: column; /* Stack children vertically */
+        }
+        .contact{
+            flex: 0 0 auto; /* Allow the boxes to determine their own height */
+            width: 100%; /* Full width on small screens */
+            max-width: 100%; /* Override any previous max-width */
+            margin: 1rem 0; /* Adjust margin to only vertical */
+        }
+        .profile-picture img {
+            max-width: 80%; /* Larger on smaller screens */
+            margin-top: 20px; /* Space between the image and text */
+        }
+        #thought1 {
+            right: 0%; /* Adjust this value to position the first bubble */
+            top:244%;
+        }
+
+        #thought2 {
+            left: 20%; /* Adjust this value to position the second bubble */
+            top:244%;
+        }
+        .about-text {
+            font-size: 0.1rem;
+        }
+    }
+
+
+    @media (max-width: 50%) {
+        #thought1 {
+            margin-right: 30%; /* Adjust this value to position the first bubble */
+            width: 60%; /* Adjust for smaller screens */
+            top:244%;
+        }
+
+        #thought2 {
+            margin-left: 40%; /* Adjust this value to position the second bubble */
+            top:244%;
+        }
+            /*thinking animation*/
+        .thinking-brain-container {
+            position: absolute;
+            left: 0%;
+            top: 30%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 10%;
+            
+        }
+        .header-content {
+            top: -220%;
+            position: absolute; /* or you could use 'relative' */
+            padding: 1rem; /* Adjust as needed */
+            text-align: left; /* Centers the text */
+        }
+        /* Specific to #problem1 to ensure it is centered within the .problem-container */
+        .problem-container {
+            font-size: 0.1rem;
+
+        }
+        .project-intro-container {
+            font-size: 0.1rem;
+            width: 95%; /* Full width with some margin */
+            translate:(-50%, -50%);
+        }
+        .profile-picture img {
+            max-width: 70%; /* Adjust the profile image size on very small screens */
+        }
+        #thought1 {
+            right: 0%; /* Adjust this value to position the first bubble */
+            top:190%;
+        }
+
+        #thought2 {
+            left: 20%; /* Adjust this value to position the second bubble */
+            top:190%;
+        }
+        .grid-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            flex-wrap: nowrap; /* Prevents the items from wrapping */
+        }
+        .about-text {
+            font-size: 0.1rem;
+        }
+    }
+    @keyframes spin-around {
+        from {
+        transform: translateX(0%) rotateY(0deg); /* Adjust X translation to -50% of image width */
+        }
+        to {
+        transform: translateX(0%) rotateY(360deg);
+        }
+    }
+
+    /* New Project Section Styles */
+    .projects-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 2rem; /* space between items */
+        padding: 0;
+    }
+    
+    .project-card {
+        margin: 2rem auto; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 80%;
+        background-color: var(--background-light);
+        border-radius: 10px;
+        flex-direction: row;
+        overflow: hidden; /* For image border-radius */
+        transition: transform 0.3s ease;
+        padding: 1rem;
+    }
+    
+    .project-card .project-description,
+    .project-card .project-intro-image {
+        flex: 1; /* Allow both children to grow and take up equal space */
+        margin: 0 1rem; /* Add margin between text and image for spacing */
+    }
+
+    .project-image {
+        width: 100%;
+        border-top-left-radius: 10px; /* rounding the image */
+        border-top-right-radius: 10px;
+        height: 200px; /* Fixed height or use 'auto' for aspect ratio */
+        object-fit: cover; /* Cover the card area */
+    }
+
+    .project-description, .style-guide-description {
+        padding: 1rem;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .project-text {
+        font-size: 1rem;
+        color: var(--text-color);
+        margin-bottom: 1rem;
+    }
+
+    .project-button {
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        display: block; /* or inline-block */
+        margin: 0 auto; /* Centering the button */
+    }
+
+    /* Add additional styling as needed */
+    .project-intro-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Aligns items to the top */
+        margin-bottom: 2rem; /* Spacing below the section */
+    }
+    
+    .project-intro-text {
+        flex: 1; /* Takes up half the space in the container */
+        padding-right: 20px; /* Optional spacing between text and image */
+    }
+    
+    .project-intro-image {
+        flex: 1; /* Takes up the remaining space in the container */
+        padding-left: 20px; /* Optional spacing between image and text */
+    }
+    
+    .project-intro-image img {
+        max-width: 100%; /* Ensures the image is responsive and doesn't overflow */
+        height: auto; /* Maintains aspect ratio */
+    }
+  
+    .problem-container {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        
+        gap: 1rem; /* Adjust the space between the items */ 
+
+        margin-top: 1rem 0;
+    }
+    
+    .problem {
+        flex: 1; /* Assigns 50% of the container's width to each problem */
+        margin: 0;
+        padding: 1rem;
+        max-width: 100%; /* Ensures that the max width is also 50% */
+        box-sizing: border-box;
+    }
+    
+    /* Specific to #problem1 to ensure it is right to the .problem-container */
+    #problem1 {
+        flex: 0 0 100%; /* Do not allow the item to grow or shrink, force it to be full width */
+        max-width: 50%; /* Max width of the centered div */
+        margin: auto; /* This will center the box if it's less than 100% wide */
+        margin-top: 5%;
+        display: flex; /* This makes sure that the content inside is also flexed */
+        align-items: center; /* Vertically centers the content inside */
+        z-index: 2;
+    }
+    /* Specific to #problem2 to ensure it is left to the .problem-container */
+    #problem2 {
+        flex: 0 0 100%; /* Do not allow the item to grow or shrink, force it to be full width */
+        max-width: 50%; /* Max width of the centered div */
+        margin: auto; /* This will center the box if it's less than 100% wide */
+        margin-top: 10%;
+        display: flex; /* This makes sure that the content inside is also flexed */
+        align-items: center; /* Vertically centers the content inside */
+    }
+    .grid-container {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        
+        gap: 1rem; /* Adjust the space between the items */ 
+
+        margin-top: 1rem 0;
+    }
+    
+    .item {
+        flex: 1; /* Assigns 50% of the container's width to each problem */
+        margin: 0;
+        padding: 1rem;
+        max-width: 100%; /* Ensures that the max width is also 50% */
+        box-sizing: border-box;
+    }
+    
+    /* Specific to #problem1 to ensure it is right to the .problem-container */
+    #item1 {
+        flex: 0 0 100%; /* Do not allow the item to grow or shrink, force it to be full width */
+        max-width: 50%; /* Max width of the centered div */
+        margin: auto; /* This will center the box if it's less than 100% wide */
+        margin-top: 5%;
+        display: flex; /* This makes sure that the content inside is also flexed */
+        align-items: center; /* Vertically centers the content inside */
+        z-index: 2;
+    }
+    /* Specific to #problem2 to ensure it is left to the .problem-container */
+    #item2 {
+        flex: 0 0 100%; /* Do not allow the item to grow or shrink, force it to be full width */
+        max-width: 50%; /* Max width of the centered div */
+        margin: auto; /* This will center the box if it's less than 100% wide */
+        margin-top: 10%;
+        display: flex; /* This makes sure that the content inside is also flexed */
+        align-items: center; /* Vertically centers the content inside */
+    }
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        
+        gap: 2rem; /* Adjust the space between the items */
+        justify-content: center; 
+        align-items: flex-start;
+        margin-top: -50px;
+    }
+    .contact {
+        flex: 1; /* Assigns 50% of the container's width to each problem */
+        max-width: calc(50% - 10px); /* Ensures that the max width is also 50% */
+    }
+    /* Specific to #problem1 to ensure it is right to the .problem-container */
+    #contact1 {
+        flex: 0 0 100%; /* Do not allow the item to grow or shrink, force it to be full width */
+        max-width: 800px; /* Max width of the centered div */
+        margin: auto; /* This will center the box if it's less than 100% wide */
+        margin-top: 10%;
+        display: flex; /* This makes sure that the content inside is also flexed */
+        justify-content: right; /* Horizontally centers the content inside */
+        align-items: center; /* Vertically centers the content inside */
+        z-index: 2;
+    }
+    /* Specific to #problem2 to ensure it is left to the .problem-container */
+    #contact2 {
+        flex: 0 0 100%; /* Do not allow the item to grow or shrink, force it to be full width */
+        max-width: 800px; /* Max width of the centered div */
+        margin: auto; /* This will center the box if it's less than 100% wide */
+        margin-top: 10%;
+        display: flex; /* This makes sure that the content inside is also flexed */
+        justify-content: left; /* Horizontally centers the content inside */
+        align-items: center; /* Vertically centers the content inside */
+    }
+    .contact-card {
+        margin: 2rem auto; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 80%;
+        background-color: var(--background-light);
+        border-radius: 10px;
+        flex-direction: row;
+        overflow: hidden; /* For image border-radius */
+        transition: transform 0.3s ease;
+        padding: 1rem;
+    }
+    
+
+
+    .contact-card .contact-description,
+    .contact-card .contact-intro-image {
+        flex: 1; /* Allow both children to grow and take up equal space */
+        margin: 0 1rem; /* Add margin between text and image for spacing */
+    }
+
+    .contact-image {
+        width: 100%;
+        border-top-left-radius: 10px; /* rounding the image */
+        border-top-right-radius: 10px;
+        height: 200px; /* Fixed height or use 'auto' for aspect ratio */
+        object-fit: cover; /* Cover the card area */
+    }
+
+    .contact-description {
+        padding: 1rem;
+    }
+    
+  /* Make images responsive */
+.container img,
+.thought-bubble img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* For background images */
+.background,
+.background-ski {
+  background-size: cover;
+  background-position: center;
+}
+
+.resolution {
+    display: flex;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.style-guide-description h3 {
+    margin-bottom: 10px; /* Space between the heading and paragraph */
+    color: #000000; /* Dark blue for better contrast */
+  }
+.project-description h1,h2,h3 {
+    margin-bottom: 10px; /* Space between the heading and paragraph */
+    color: #003366; /* Dark blue for better contrast */
+  }
+  
+  .project-description p {
+    text-align: justify;
+    line-height: 1.6; /* Increase line height for better readability */
+    color: #333; /* Dark grey for readability */
+  }
+
+
+.intro-image-position{
+    position: relative;
+    top: 0%; /* Adjust this to move up or down */
+    left: 5%;
+    color: rgb(0, 0, 0); /* Set text color */
+    max-width: 90%;  /* Set width */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align items horizontally */
+    gap: 1rem; /* Add space between elements */
+    border-radius: 15px; /* Optional: if you want rounded corners */
+    z-index: 2; /* Ensures the text is above the image */
+}
+
+button,
+input[type=reset],
+input[type=submit],
+input[type=text],
+input[type=datetime-local],
+textarea {
+	font-size: 1.4em;
+
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+
+	border: none;
+	border-radius: 5px;
+
+
+
+	transition: background-color 0.1s ease-in-out;
+}
+
+button:hover,
+input[type=reset]:hover,
+input[type=submit]:hover,
+input[type=text]:hover,
+input[type=datetime-local]:hover,
+textarea:hover {
+
+	cursor: pointer;
+}
+input[type=text]:focus,
+input[type=datetime-local]:focus,
+textarea:focus {
+	outline: none;
+
+
+	transform: perspective(1000px) translateZ(-30px);
+}
+button:active,
+input[type=reset]:active,
+input[type=submit]:active,
+input[type=text]:active,
+input[type=datetime-local]:active,
+textarea:active {
+	transform: perspective(1000px) translateZ(-40px);
+}

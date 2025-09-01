@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Facebook open graph settings -->
+    <meta property="og:locale" content="en"/>
+    <meta property="og:url" content="https://www.designmantic.com/web"/>
+    <meta property="og:site_name" content="Design Mantic"/>
+    <meta property="og:image" content="https://www.designmantic.com/web-builder/images/og_image.jpg"/>
+        <meta property="og:title"
+          content="Free Website Builder, Create Website or Online Store | Designmantic.com"/>
+        <meta property="og:description"
+          content="Use our website builder to choose and customize website templates and download. Create professional designs for best results in SERPS and web development. Try free."/>
+    <!-- Twitter card settings -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:url" content="https://www.designmantic.com/web"/>
+    <meta name="twitter:site" content="@designmantic"/>
+    <meta name="twitter:image" content="https://www.designmantic.com/web-builder/images/og_image.jpg"/>
+    <meta name="twitter:domain" content="designmantic.com"/>
+        <meta name="twitter:title"
+          content="Website Builder: Download Templates | DesignMantic: The Design Shop"/>
+        <meta name="twitter:description"
+          content="Use our website builder to choose and customize website templates and download. Create professional designs for best results in SERPS and web development. Try free."/>
+    <!-- Meta description and keywords -->
+            <meta name="description"
+              content="Use our website builder to choose and customize website templates and download. Create professional designs for best results in SERPS and web development. Try free.">
+
+        <meta name="keywords" content="web design, graphic design, website, template">
+
+                                     <link rel="canonical" href='https://www.designmantic.com/web' />
+        
+             <!-- This page in other languages/regions -->
+                                                                                           
+                <title>Free Website Builder, Create Website or Online Store | Designmantic.com</title>
+<!-- Google Tag Manager -->
+<script>
+    MAIN_SITE = "https://www.designmantic.com";
+    dataLayer = [];
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MSFCQ48');</script>
+<!-- End Google Tag Manager -->
+<!-- START GoogleAnalytics  -->
+<!-- END GoogleAnalytics -->
+<!-- START STYLESHEETS -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:300,400,600">
+<link rel="stylesheet" href="/web-builder/css/master-min.css?version=990" />
+<style>
+    .cookie-bar-new {
+	text-align: left;
+    color: #454545;
+    background: rgb(50 50 92 / 96%);
+    font-size: 10pt;
+    line-height: 1.5;
+    font-weight: 700;
+    position: fixed;
+    z-index: 9999999999;
+    display: table;
+    bottom: 1px;
+    opacity: 1;
+    width: 100%;
+    padding: 70px 10px 80px;
+   }
+
+   .cookie-bar-new h3 {    color: #fff;
+    font-size: 26px;
+    margin-bottom: 5px;}
+   .cookie-bar-new p { 
+    display: block;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 1.9; color:#fff;
+	}
+	
+	.cookie-bar-new p a{color:#fff; font-weight:bold; border-bottom:1px solid #fff;}
+
+    .cookie-bar-new .button {
+        font-size: 15px;
+        padding: 12px 30px;
+        margin-left: 0px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 4px;
+        background-color: #c61e53;
+        margin-top: 10px; color:#fff;
+        cursor: pointer;
+    }
+
+    .cookie-bar-new .container {max-width:1100px;}
+    .cookie-bar-new .button.black {  background-color: #454545; }
+
+    @media screen and (max-width: 600px) { 
+
+    .cookie-bar-new {  padding: 25px 10px 25px; }
+    .cookie-bar-new p, .cookie-bar-new .button { font-size:14px;}
+    .cookie-bar-new .button  { padding: 12px 35px;}
+    }
+</style>
+<!-- END STYLESHEETS -->
+    <script src="/web-builder/js/web-builder-master.js"></script>
+
+        <script>
+  $(document).ready(function () {
+    // Web-builder Home-page main-banner submitform
+    $("#submitform").click(function () {
+      var str = $("#company_name").val();
+      str = str.replace(/^ +/gm, '');
+      if (str == "") {
+        $("#company_error").text("Please Enter Company Name");
+        return false;
+      }
+      javascript: document.forms['companyform'].submit();
+      return true;
+    });
+    $('#companyform').submit(function () {
+      var str = $("#company_name").val();
+      str = str.replace(/^ +/gm, '');
+      if (str == "") {
+        $("#company_error").text("Please Enter Company Name");
+        return false;
+      }
+      javascript: document.forms['companyform'].submit();
+      return true;
+    });
+
+    // Web-builder Home-page submitform2
+    $("#submitform2").click(function () {
+      var str = $("#company_name2").val();
+      str = str.replace(/^ +/gm, '');
+      if (str == "") {
+        $("#company_error2").text("Please Enter Company Name");
+        return false;
+      }
+      javascript: document.forms['companyform2'].submit();
+      return true;
+    });
+    $('#companyform2').submit(function () {
+      var str = $("#company_name2").val();
+      str = str.replace(/^ +/gm, '');
+      if (str == "") {
+        $("#company_error2").text("Please Enter Company Name");
+        return false;
+      }
+      javascript: document.forms['companyform2'].submit();
+      return true;
+    });
+
+    //
+    $("#customSubmit").click(function () {
+      var ind = $("#temp_temp_categories").val();
+    $("select#details_categories").val(ind);
+      javascript: document.forms['companyform'].submit();
+    });
+    $("#customThanks").click(function () {
+      javascript: document.forms['companyform'].submit();
+    });
+    $('#companyform').submit(function () {
+      var str = $("#company_name").val();
+      str = str.replace(/^ +/gm, '');
+      if (str == "") {
+        $("#company_error").text("Please Enter Company Name");
+        return false;
+      }
+      else {
+        $("#customGallery").trigger("click");
+        return false;
+      }
+    });
+
+    // $('#videoOverlay, .video-overlay .close-button , .video-overlay .overlay-backdrop').click(function() {
+    //     if($('.video-overlay').hasClass("show")){
+    //         var videoSrc = $('.video-overlay input[name="videoSrc"]').val();
+    //         $('.video-overlay iframe').attr("src", videoSrc);
+    //     }
+    //     else {
+    //         var elm = $('.video-overlay  iframe').attr("src", "");
+    //     }
+    // });
+  });
+  </script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSFCQ48"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- START Header   -->
+<header class="main-header">
+<div class="main-header-top">
+<div class="container">
+<style> .mt-12 {margin-top:10px !important;}.main-header-top-right-side {font-size:13px;} </style>
+<div class="main-header-top-right-side">
+<div class="support-block text-right mt-12"> SALES / SUPPORT : <a href="tel:+18557525503">855-752-5503</a> </div>
+<ul class="login-signup-links-block">
+<li class="login-link"> <a href="/login"> <span>Login</span></a> </li>
+<li class="signup-link"> <a href="/login?account=1"> <span>Sign up</span> </a> </li>
+</ul>
+
+ </div> </div> </div>
+<div class="main-header-bottom">
+<div class="container">
+<div class="main-logo"> <a href="/" title="DesignMantic"><img src="/images/logo.png" alt="Logo"></a> </div>
+<ul class='hamburger-menu'> <li class='bar-first'></li> <li class='bar-second'></li> <li class='bar-third'></li> </ul>
+<nav class="main-nav">
+<ul>
+<li><a href="/logos/search"><span>Free Logo Maker</span></a></li>
+
+<li> <a href="javascript:void(0)"><span>Website Design</span> <i class="icon-caret-down"></i></a>
+<ul class="main-header-other-services dropdown"> 
+        <li><a href="/web"><span>Create Site</span></a></li> <li><a href="/web/template-listing"><span>Templates</span></a></li>   <li><a href="/web/packages"><span>Pricing</span></a></li> <li><a href="/web/features"><span>Features</span></a></li><li><a href="/web/domain"><span>Domain</span></a></li><li><a href="/web/mailbox"><span>Mailbox</span></a></li>
+                        
+            </li>
+</ul>
+<li> <a href="javascript:void(0)"><span>Other Services</span> <i class="icon-caret-down"></i></a>
+    <ul class="main-header-other-services dropdown"> 
+        <li><a href="/design-packages"><span>Complete Branding</span></a></li> <li><a href="/business-card-design/create"><span>Business Card Design</span></a></li> 
+        <li class="tshirtDesign_link"><a href="/tshirt-design/create"><span>T-Shirt Design</span></a></li> 
+        
+        <li><a href="/letter-head/create"><span>Letterhead Design</span></a></li> <li><a href="/envelope/create"><span>Envelope Design</span></a></li> <li><a href="/email-signature-design/edit"><span>Email Signature Design</span></a></li> <li><a href="/flyer-design/edit"><span>Flyer Design</span></a></li> <li class="socialHeaderDesign_link"><a href="/social-headers/create" ><span>Social Header Design</span> <i class="icon-caret-right"></i></a> <ul class="dropdown"> <li><a href="/social-headers/designStudio"><span>Facebook Header</span></a></li> <li><a href="/social-headers/designStudio/2"><span>Twitter Header</span></a></li> <li><a href="/social-headers/designStudio/4"><span>LinkedIn Header</span></a></li> <li><a href="/social-headers/designStudio/5"><span>Instagram Post</span></a></li></ul> </li> <li><a href="/monogram-design/create"><span>Monogram Design</span></a></li> <li><a href="/wedding-card-design/create"><span>Wedding Card Design</span></a></li> <li><a href="/custom-design"><span>Custom Design</span></a></li> </ul> </li>
+
+</nav>
+</div>
+</div>
+</header>
+<!-- END Header -->
+ 
+<!-- START main-contianer -->
+  <div class="main-container theme-padding-bottom page-Web-builder">
+          <div class="main-banner web-builder-banner theme-padding new-banner">
+        <div class="container">
+                <div class="row">
+                  <div class="col-sm-7 text-content">
+                    <h1>Easy Website Builder</h1>
+                    <h2>Web design with logo solutions.</h2>
+                    <p>Enter your company name, select your industry, choose your design from hundreds of templates and customize
+                      free. </p>
+                    <div class="form-block-sm form-white-border">
+                      <form id="companyform" action="/web/template-listing" method="post">
+                        <input type="hidden" name="f" value="createweb">
+                        <div class="field-group">
+                          <input id="company_name" class="input-control-1" maxlength="30" name="company" title="Enter Company Name" onfocus="(this.placeholder = '')" onblur="(this.placeholder = 'Enter Company Name')" placeholder="Enter Company Name" autofocus="">
+                          <label id="company_error" class="help-block" for="company_name"></label>
+                        </div>
+                        <input id="submitform" class="btn btn-md btn-color-3 btn-square" type="submit" value="Create my Website Free">
+                      </form>
+                    </div>
+                  </div>
+                  <!-- text-content end -->
+                  <div class="col-sm-5 media-content content-video">
+                      <video class="dm-video" src="/web-builder/video/wb-video.mp4"
+                             autoplay="" loop="" muted="muted" controlslist="nodownload" width="100%">
+                             Your browser does not support the video tag.
+                      </video>
+
+                                      </div>
+                  <!-- Media Content -->
+                </div>
+          </div>
+        </div>
+        
+
+
+
+
+
+
+  <section class="website-simples-container theme-padding text-center">
+    <div class="container">
+
+      <div class="mb-3">
+        <!-- <a class="link-expore-more link-text" href="/web/template-listing">Explore More ></a> -->
+        <h2 class="mb-0 heading-line-style text-center">Professional Website Design Templates</h2>
+        <p>Let our algorithms choose the best designs for your industry.</p>
+      </div>
+<div class="website-simples-list-item custom-scrollbar">
+      <ul class="list-inline">
+        <li>
+          <a rel="nofollow" href="/web/default-preview?id=8038458b8761b81db076e636ad82ed43&amp;siteColor=fa0f0c"> <img class="img-responsive" src="/web-builder/images/web-template-gymtivity.jpg" alt="web-template-contruction"/></a>
+          <a rel="nofollow" class="btn btn-md btn-color-3" href="/web/default-preview?id=8038458b8761b81db076e636ad82ed43&amp;siteColor=fa0f0c"> <span>Browse Website Designs Free</span></a>
+        </li>
+        <li>
+          <a rel="nofollow" href="/web/default-preview?id=8038458b8761b81db076e636ad82ed45&amp;siteColor=d32f2f"> <img class="img-responsive" src="/web-builder/images/web-template-autocity.jpg" alt="web-template-event"/> </a>
+          <a rel="nofollow" class="btn btn-md btn-color-3" href="/web/default-preview?id=8038458b8761b81db076e636ad82ed45&amp;siteColor=d32f2f"> <span>Browse Website Designs Free</span></a>
+        </li>
+        <li>
+          <a rel="nofollow" href="/web/default-preview?id=8038458b8761b81db076e636ad82ed42&amp;siteColor=f16c4a"><img  class="img-responsive" src="/web-builder/images/web-template-shopertize.jpg" alt="web-template-interior"/></a>
+          <a rel="nofollow" class="btn btn-md btn-color-3" href="/web/default-preview?id=8038458b8761b81db076e636ad82ed42&amp;siteColor=f16c4a"><span>Browse Website Designs Free</span></a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </section>
+
+
+<section class="bg-color-1 theme-padding website-feature-container">
+  <div class="container web-tab-content-block">
+    <h2 class="heading-line-style text-white text-center mb-4">Try Our Website Builder</h2>
+
+
+
+
+<div id="fastAndInstant-item" class="clearfix tab-content-item ">
+  <div class="col-md-6">
+    <img  class="img-responsive center-block" src="/web-builder/images/new-theme/img-2.png" alt=""/></a>
+  </div>
+  <div class="col-md-4">
+      <h3 class="heading-line-style">Fast &amp; Instant</h3>
+      <p class="mb-1"> Our web design templates are professional, and our online builder is quick allowing you to develop your design in minutes. </p>
+        <p> Enter your company name, and as our bots pick your designs just browse themes after themes and select the one for your business website instantly. Edit the colors, design elements and make it yours.</p>
+      </div>
+</div>
+
+
+<div id="beautifulLayouts-item"  class="clearfix tab-content-item active">
+  <div class="col-md-6">
+    <img class="landingPage-emailBanner" src="/web-builder/images/discount-02.png" alt="" width="">
+    <img  class="img-responsive center-block" src="/web-builder/images/img-1.png" alt=""/>
+  </div>
+  <div class="col-md-4">
+    <h3  class="heading-line-style">Beautiful Layouts</h3>
+    <p class="mb-1"> Professionally designed, responsive layouts for a mobile world. Colors, fonts and images are chosen according to best practices of the industry. </p>
+    <p>Plenty of layout options to choose from - you can change the color theme, the fonts, image, logo or simply swap for a different theme. With our <a class="link-text" href="/web/template-listing">website builder</a> you can customize website design layouts to suit your taste and business needs, within minutes.
+    </p>
+  </div>
+</div>
+
+
+<div id="HtmlDevelopmentTool-item" class="clearfix tab-content-item">
+  <div class="col-md-6">
+    <img  class="img-responsive center-block" src="/web-builder/images/new-theme/img-3.png" alt=""/>
+  </div>
+  <div class="col-md-4">
+  <h3 class="heading-line-style">HTML5 Development Tool</h3>
+  <p  class="mb-1">Web development becomes seamless if you let our HTML5 website builder handle the background work, while you concentrate on getting your website up and running. </p>
+  <p> Our <a class="link-text" href="/web/template-listing">HTML5 website design tool</a> is of the drag and drop variety. Upload to customize your website to perfection, or edit, delete and start over.
+  </p>
+</div>
+</div>
+
+<div class="text-center mt-3">
+  <a class="btn btn-md btn-color-3 btn-square ml-4" href="/web/template-listing">Explore Designs Free</a>
+</div>
+
+</div>
+
+  <ul class="web-tab-buttons-block list-inline">
+    <li data-id="fastAndInstant-item" >Fast & Instant <span></span></li>
+    <li data-id="beautifulLayouts-item" class="active">Beautiful Layouts <span></span></li>
+    <li data-id="HtmlDevelopmentTool-item">Easy Tool <span></span></li>
+  </ul>
+
+</section>
+
+
+
+<section class="build-your-website-container theme-padding-top text-center">
+  <div class="container">
+    <h2>WEBSITE DESIGN</h2>
+    <p>A website design in minutes and FREE? Yes, our web design maker is fast and can help you create your website in minutes. Why bother with web designers who
+will take eons to create your website design, when you have DesignMantics web builder, and create your website for FREE!</p>
+
+
+  <div class="row">
+      <div class="col-sm-8">
+        <img class="img-responsive center-block" src="/web-builder/images/new-theme/web-mockup.gif" alt="web design template themes" />
+              
+              </div>
+      <div class="col-sm-4 text-left">
+        <ul class="list-style-radio mt-4">
+          <li>Fast & Instant</li>
+          <li>Beautiful Layouts</li>
+          <li>Easy Tool</li>
+          <li>Pre-Designed Templates</li>
+        </ul>
+        <a class="btn btn-md btn-color-3 btn-square ml-4" href="#">Build Your Website Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+</div><!-- END main-contianer -->
+  <script type="text/javascript">
+      </script>
+<section id="related_links" class="">
+    <div class="container text-center theme-padding-bottom related_links_block">
+    <h3 class="inline" style="margin-bottom:10px;">You may also be interested in:</h3>
+    <ul class="list-inline display-inline link-text-section">
+                    <li class="mx-1">
+                <a href="/logo-design">Free logo templates</a>
+            </li>
+                    <li class="mx-1">
+                <a href="/logos/search/website">Website logos</a>
+            </li>
+                    <li class="mx-1">
+                <a href="/logos/search/e-commerce">E-commerce logos</a>
+            </li>
+                    <li class="mx-1">
+                <a href="/logos/search/blog">Blog logos</a>
+            </li>
+                    <li class="mx-1">
+                <a href="/logos/search/web-design">Web design logos</a>
+            </li>
+                    <li class="mx-1">
+                <a href="/logos/search/e-business">E-business logos</a>
+            </li>
+                    <li class="mx-1">
+                <a href="/logos/search/computer">Computer logos</a>
+            </li>
+                    <li class="mx-1">
+                <a href="/logos/search/laptop">Laptop logos</a>
+            </li>
+                    <li class="mx-1">
+                <a href="/logos/search/technology">Technology logos</a>
+            </li>
+                    <li class="mx-1">
+                <a href="/logos/search/creative-agency">Creative agency logos</a>
+            </li>
+            </ul>
+    </div>
+</section>
+<style>
+   .related_links_block li {
+            text-align: left;
+            display: inline-block;
+            width: 40%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .related_links_block ul {
+           text-align: center;
+           display: inline-block;
+           max-width: 400px;
+           margin-left: 10px;
+           margin-right: 10px;
+        }
+</style>
+<!-- START Modal -->
+<!-- END Modal -->
+ <!-- START Footer   -->
+<footer  class="main-footer new-update">
+
+
+<div class="main-footer-top">
+<div class="container">
+  <div class="footer-mobile-nav"><span class="btn btn-md btn-color-3 btn-square">SHOW FOOTER NAVIGATION</span></div>
+<ul class="main-footer-top-list">
+  <li>
+  <h5>DIY Solutions</h5>
+  <ul>
+    <li><a href="https://www.designmantic.com/logo-design"><span>Logo Design</span></a></li>
+    <li><a href="/logos/search"><span>Free Logo Maker</span></a></li>
+    <li><a href="/business-card-design/create"><span>Business Card Design</span></a></li>
+    <li><a href="/tshirt-design/create"><span>T-Shirt Design</span></a></li>
+    <li><a href="/monogram-design/create"><span>Wedding Monogram Maker</span></a></li>
+    <li><a href="/wedding-card-design/create"><span>Wedding Invitation Design</span></a></li>
+    <li><a href="/social-headers"><span>Social Headers Design</span></a></li>
+    <li><a href="/letter-head"><span>Letterhead Design</span></a></li>
+    <li><a href="/envelope"><span>Envelope Design</span></a></li>
+    <li><a href="/email-signature-design"><span>Email Signature Design</span></a></li>
+    <li><a href="/flyer-design"><span>Flyer Design</span></a></li>
+    <li><a href="/web"><span>Website Builder</span></a></li>
+    <li><a href="/design-packages"><span>Complete Branding</span></a></li>
+
+            <li><a href="/printing"><span>Printing Services</span></a></li>
+      </ul>
+</li>
+
+  <li>
+    <h5>Custom Products</h5>
+  <ul> <li><a href="/custom-design"><span>Custom Design</span></a></li> </ul>
+  
+  <h5>Customer Zone</h5>
+  <ul>
+    <li><a href="/login"><span>Account Login</span></a></li>
+    <li><a href="/how-it-works"><span>How it Works</span></a></li>
+    <li><a href="https://support.designmantic.com/"><span>Support</span></a></li>
+    <li><a href="/affiliate"><span>Affiliate Program</span></a></li>
+    <li><a href="/sitemap"><span>Sitemap</span></a></li>
+    <li><a href="/web/faq"><span>FAQs</span></a></li>
+      </ul>
+</li>
+
+<li>
+  <h5>Corporate</h5>
+  <ul>
+    <li><a href="/contact"><span>Contact Us</span></a></li>
+
+        <li><a href="/industry/logo-design-articles.php"><span>Industry Portfolio</span></a></li>
+    <li><a href="/community/"><span>Community</span></a></li>
+    <li><a href="/how-to"><span>How-To Resource</span></a></li>
+    <li><a href="/terms_and_cond"><span>Terms and Conditions</span></a></li>
+    <li><a href="/scholarship"><span>Scholarship</span></a></li>
+    <li><a href="/privacy"><span>Privacy Policy</span></a></li>
+        <li><a href="/nonprofit"><span>Non-Profits </span></a></li>
+    <li><a href="/white_label"><span>White Label </span></a></li>
+  </ul>
+</li>
+
+<li>
+  <h5>Social Connect</h5>
+  <ul>
+        <li><a href="https://www.designmantic.com/blog/" target="_blank"><span>Blog</span></a></li>
+    
+    <li><a href="https://www.twitter.com/DesignMantic"><span>Twitter</span></a></li>
+    <li><a href="https://www.facebook.com/DesignMantic"><span>Facebook</span></a></li>
+    <li><a href="https://www.linkedin.com/company/designmantic/"><span>LinkedIn</span></a></li>
+    <li><a href="https://www.pinterest.com/designmantic/"><span>Pinterest</span></a></li>
+  </ul>
+</li>
+
+
+
+</ul>
+</div>
+</div><!-- END main-footer-top -->
+
+<div class="main-footer-bottom container text-center">
+
+
+        <ul class="pull-left list-inline">
+         <li><a rel="nofollow" href="https://www.facebook.com/DesignMantic" target="social"> <div id="footerFacebook1New"> <span class="fb_counter"> </span> </div> </a>
+         </li>
+         <li>
+         <a rel="nofollow" href="https://twitter.com/DesignMantic" target="social"> <div id="footerTwitter1New"> <span class="tw_counter" title="Twitter"> </span> </div> </a>
+       </li>
+
+    </ul>
+
+
+
+
+<p class="main-footer-copyright">Copyright &copy; 2024 DesignMantic.com. All Rights Reserved</p>
+
+
+<ul class="pull-right list-inline">
+</ul>
+</div>
+</footer>
+<!-- ENDFooter -->
+        <!-- END popup -->    
+    <!-- START Modal -->
+<div class="overlay-container logo-design-overlay">
+<span class="overlay-backdrop"></span>
+<div class="vertical-center-outer">
+<div class="vertical-center-container">
+<div class="overlay-content-box">
+<div class="overlay-head">
+<h2>Create Design:</h2> <span class="close-button">&times;</span>
+</div>
+<div class="overlay-body">
+<form role="form" action="/logo-design/samples" method="post">
+<div class="field-group">
+<label for="company">Company Name<span>*</span>:</label>
+<input id="company" class="input-control-1" type="text" name="company">
+</div>
+<div class="field-group">
+<label for="slogan">Slogan:</label>
+<input id="slogan" class="input-control-1" type="text" name="slogan" >
+</div>
+<input class="btn btn-md btn-color-3 btn-square" type="submit" id="submit" name="btnShowMyDesigns" value="Show My Designs" />
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- END Modal -->
+<!-- START SCRIPT -->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Service",
+  "name": "Website Design Online",
+  "description": "Create a website using DesignMantic website builder. Develop a web site design that is customizable and responsive. Templates that make an impact. Try Free.",
+  "provider": {
+    "@type": "CreativeWork",
+    "name": "Web Site Design",
+    "sameAs": [
+      "https://www.wikidata.org/wiki/Q8150312",
+      "https://www.wikidata.org/wiki/Q386275",
+      "https://www.wikidata.org/wiki/Q16001749",
+      "https://www.wikidata.org/wiki/Q62128063",
+      "https://www.wikidata.org/wiki/Q420295",
+      "https://www.wikidata.org/wiki/Q190637",
+      "https://www.wikidata.org/wiki/Q35127",
+      "https://www.wikidata.org/wiki/Q11439",
+      "https://www.wikidata.org/wiki/Q9579"
+    ]
+  },
+  "brand": {
+    "@type": "Organization",
+    "name": "Design Mantic"
+  }
+}
+</script>
+<script>
+
+  $(".web-tab-buttons-block li").click(function() {
+    $(".web-tab-buttons-block li").removeClass("active");
+    $(this).addClass("active");
+    $(".tab-content-item").removeClass("active");
+    var tabDataId = $(this).attr("data-Id");
+    $("#" + tabDataId).addClass("active");
+  });
+</script>
+
+<style >
+  .tab-content-item { display: none}
+  .tab-content-item.active { display: block}
+  .landingPage-emailBanner {
+    width: 150px;
+    margin: -60px auto 7px;
+    display: block;
+	}
+</style>
+
+
+
+
+<!-- END SCRIPT -->
+    <div class="cookie-bar-new" style="display: none">
+        <div class="container">
+            <h3 class="text-left mb-0"> Use of Cookies </h3>
+            <p> This website uses cookies and similar third-party tools to personalize content for a better user experience. Without continues, our website may not function properly. If you continue to use our website, you indicate that you agree to our <a href="/privacy">terms and cookies policy.</a></p>
+                        <span class="button button-sm-1 btn-color-1 cookie-btn">Got it!</span>
+        </div>
+    </div>
+</body>
+</html>
